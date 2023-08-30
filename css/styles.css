@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body {
+
+    background-color: #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.4rem;
+    flex-direction: column;
+}
+
+#calc {
+    border: 1px rgb(43, 43, 43) solid;
+    width: 450px;
+    padding: .3rem;
+    background-color: #d3d3d3;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3%;
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(48, 48, 48, 0.75);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(46, 46, 46, 0.75);
+    box-shadow: 0px 0px 16px 0px rgba(46, 46, 46, 0.75);
+
+}
+
+#calc h3 {
+    border-bottom: 1px solid #929292;
+    font-size: 1.4rem;
+    font-weight: 260;
+    color: #000000;
+}
+
+#operations {
+    text-align: right;
+}
+
+#previous-operation,
+#current-operation {
+    padding: 0.2rem;
+    overflow-wrap: break-word;
+    min-height: 3.3rem;
+
+}
+
+#previous-operation {
+    color: #752361;
+    font-size: 1.5em;
+}
+
+#current-operation {
+    font-size: 2.4em;
+    font-weight: 700;
+}
+
+#buttons-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+
+}
+
+#buttons-container button {
+    border: 1px solid #d818a5;
+    border-radius: 5%;
+    height: 4em;
+    font-size: 1.1em;
+    font-weight: 700;
+    background-color: #d818a5;
+    cursor: pointer;
+
+}
+
+#buttons-container .number {
+    background-color: #e0dede;
+}
+
+#buttons-container button:hover {
+    background-color: #8d3c6c;
+    border-color: #999;
+
+}
+
+#buttons-container #equal-btn {
+    grid-column: span 2;
+    background-color: #75a5cb;
+}
+
+#buttons-container #equal-btn:hover {
+    background-color: #3a91b8;
+}
